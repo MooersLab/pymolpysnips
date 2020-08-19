@@ -1,6 +1,6 @@
 ## **pymolpysnipts** library to support literate programming with PyMOL
 
-This is the pymmolspysnips library that has PyMOL pml code enclosed in cmd.do() functions.
+This is the pymolpysnips library that has PyMOL pml code enclosed in cmd.do() functions.
 This enclosure enables passage of pml code to PyMOL from literate programming documents with Python kernels with the results returned to output cells in the document.
 This code will optimized for speed later by replacing the pml commands with their Python functions in the pymol Python.api.
 The current suboptimal code is easier for non-Python users to understand.
