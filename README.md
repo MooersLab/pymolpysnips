@@ -109,21 +109,16 @@ Some of these text editors can take hours to customize to fit your needs; howeve
  
 <h3 name="atom" > Atom (Universal) </h3>
 
-[*Atom*](https://atom.io) is a favorite of professional programmers because it is easily extended and customized.
-They advertise themselves as a "hackable text editor".
-It integrates with GitHub nicely and the GUI is very attractive.
+[*Atom*](https://atom.io) 
 
-I am not as smitten with *Atom* as other programmers.
-I found that *Atom's* startup speed bogs down as more plugins are added.
-The work-around is to always keep *Atom* open.
-
+The  
 There is a very extensive collection of plugins available for *Atom*.
 The installation and updating of plugins is quite slow compared to other editors.
 
 <details>
 <summary><b>Installing and using snippets with Atom</b></summary>
 
-You will need the `snippets` package to be able to use the above PyMOL snippets.  
+You will need to install the `snippets` package to be able to use the pymolpysnips snippets.  
 The package installer is very intuitive.
 Simply go to `Packages --> Settings View --> Install packages/themes`.
 Search for **snippets** and click the install button.
@@ -144,7 +139,7 @@ Click install and enjoy!
 </p>
 
 The snippets for all languages are stored in a single file that is called `snippets.cson`.
-This file is stored in hidden folder on your home directory called `~.atom/snippets.cson`.
+This file is stored in a hidden folder on your home directory called `~/.atom/snippets.cson`.
 
 You can concatenate [this](https://github.com/MooersLab/pymolsnips/tree/master/atompymolsnips) file of
 PyMOL snippets for *Atom* to your existing `snippets.cson` file.
@@ -152,44 +147,43 @@ PyMOL snippets for *Atom* to your existing `snippets.cson` file.
 To do this, for Mac users enter:
 
 ```bash
-$ cp -a ~/pymolsnips/atompymolsnips/pymolsnippets.cson ~/.atom/snippets.cson
+$ cp -a ~/pymolsnips/atompymolpysnips/pymolpysnippets.cson ~/.atom/snippets.cson
 ```
+
+The pymolpysnips.cson file must start with `'.source.python':` for the snippets to be active in a Python script file and to avoid having the tab triggers of the snippets in this library conflict with the snippets in the pymolsnips library.
 
 You can also access the `snippets.cson` file via the *Welcome Guide* of *Atom*, under the section called `<>Add a Snippet --> Open your snippets`. Or through `Atom (menu) --> Snippets...`.
 
-For windows users, it might be easiest to access the `snippets.cson` file via the *Welcome Guide*. Paste the `snippets.cson` provided [here](https://github.com/MooersLab/pymolsnips/tree/master/atompymolsnips) into this file. 
+For windows users, it might be easiest to access the `snippets.cson` file via the *Welcome Guide*.
+Paste the `snippets.cson` provided [here](https://github.com/MooersLab/pymolpysnips/tree/master/atompymolpysnips) into this file.
 
-A third option available for windows users, is to navigate to the `.atom` folder through the GUI of **File Explorer** and open the `snippets.cson` that way as well. 
+A third option available for windows users, is to navigate to the `.atom` folder through the GUI of **File Explorer** and open the `snippets.cson` file.
 
-Below is an example of the *threeMaps* snippet use with mirrored tab stops. 
+Below is an example of the *threeMaps* snippet use with mirrored tab stops.
 
 <p align="center">
- <img src="gifs/AtomSnipsUse.gif">
+    <img src="https://github.com/MooersLab/pymolsnips/blob/master/gifs/AtomSnipsUse.gif">
 </p>
 </details>
-
 
 <details>
 <summary><b>Running a PyMOL inside a jupyter notebook running inside of Atom via the plugin Hydrogen</b></summary>
 
 The plugin Hydrogen enables the running of Juptyer Notebooks inside of Atom.
 
-
-
 #### I need to replace this gif.
 
 <p align="center">
-	  <img src="gifs/AtomSnipsUse.gif">
+     <img src="https://github.com/MooersLab/pymolsnips/blob/master/gifs/AtomSnipsUse.gif">
 </p>
 
-
-</details>	
+</details>
 <A href=#FASTLINKS2 >Return to list of editors above.</A>
 
 <h3 name="bbedit"> BBEdit (Mac only) </h3>
 
 [*BBEdit*](https://www.barebones.com/products/bbedit/index.html) requires a license and a one-time fee.
-Major upgrades require additional fees. You will need macOS 10.14.2 or later. 
+Major upgrades require additional fees. You will need macOS 10.14.2 or later.
 
 The snippet system for *BBedit* is simple and elegant.
 The snippets are stored as clippings with one snippet or clipping per file.
