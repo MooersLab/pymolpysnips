@@ -1,6 +1,11 @@
 ## ***pymolpysnips*** library to support literate programming with PyMOL
 
-This is the pymolpysnips library that has PyMOL pml code enclosed in cmd.do() functions.
+This is the **pymolpysnips** library for the molecualr graphics program PyMOL.
+This library contains Python code for PyMOL.
+The library is formatted for use in text edidtors, IDEs, and electronic notebooks including Jupyter, org-mode, and Rmarkdown.
+If you are looking for the library for the PyMOL Macro Language (pml), see the sibling library [**pymolsnips**](https://github.com/MooersLab/pymolpysnips/issues).
+
+ that has either Python code or  PyMOL pml code enclosed in cmd.do() functions.
 This enclosure enables passage of pml code to PyMOL from literate programming documents with Python kernels with the results returned to output cells in the document.
 This code will optimized for speed later by replacing the pml commands with their Python functions in the pymol Python.api.
 The current suboptimal code is easier for non-Python users to understand.
@@ -77,7 +82,7 @@ There are at least kinds of snippet systems available for Vim and neovim.
   * <a href="#wings"> Wings </a>
 
 
-If your favorite editor is not listed, please post an issue [here](https://github.com/MooersLab/pymolsnips/issues).
+If your favorite editor is not listed, please post an issue [here](https://github.com/MooersLab/pymolpysnips/issues).
 I will be notified immediately by e-mail and will try to develop a snippet library for the requested editor.
 
 Support is planned for the following editors:
@@ -611,9 +616,13 @@ Its first stable release was in 2018.
 The Jupyter Notebook is an electronic notebook for interactive programming in Python.
 It can be extended for use with scores of other programming languages via kernels.
 It was released initially in the fall of 2014.
+Jupyter Notebooks are very fun to use when developing new code because the interleaved output in the form of beautiful figures provides instant gratification.
 
-The Jupyter Notebook descended from the IPython Notebook project, which started in 2011.
-The IPython Notebook project emerged out of the IPython project which was started in 2001 by Fernando Perez when he was a graduate student in Physics as the U of Colorado.
+The Jupyter Notebook descended from the IPython Notebook project, which was started in 2011.
+The Jupyter Notebook has superseded the Ipython Notebook.
+The IPython Notebook project emerged out of the IPython project, which was started in 2001 by Fernando Perez when he was a graduate student in Physics as the U of Colorado.
+Ipython is run in a terminal rather than in a browser.
+Of course, Ipython is still evolving and it still available.
 
 The Jupyter Notebook is composed of cells.
 Code cells can be edited.
@@ -621,9 +630,13 @@ They contain blocks of code that generally do one thing.
 All of the code in a cell is run at once.
 The use of executable blocks of code eases debugging.
 
-PyMOL can be import into an active notebook as a module.
-
-Jupyter Notebooks are very fun to use when developing new code because the interleaved output in the form of beautiful figures provides instant gratification.
+PyMOL can be imported into an active notebook as a module.
+The most robust way to do this is to make a kernel for the Python interpreter inside of PyMOL.
+Give it a meaningful name like *pymol.python*.
+Select this kernel after the start up of Jupyter.
+You can also install pymol in the same python interpreter used for your installation of jupyter.
+This does not always work well.
+More information is found on the [PyMOL Wiki](https://pymolwiki.org/index.php/Jupyter).
 
 Jupyter Notebooks are also effective for providing training in the classroom and workshops.
 It is designed to support reproducible research and literate programming.
@@ -632,10 +645,81 @@ That is, you have to be mindful of the order in which the cells were executed.
 
 Jupyter Notebook and Jupyter Lab have extensions that extend their capabilities,
 but their extensions are not interchangeable.
-Both have extensions for vim keybindings which will appeal to vim users.
+Both have extensions for vim keybindings, which will appeal to vim users.
 
 
-<h4 name="jupyterlabsnippets"> JupyterLab Snippets</h4>
+<h4 name="jupyterlabsnippets"> jupyterlabpymolpysnips</h4>
+This library has only the Python code without tabstops.
+JupyterLab does not support tab stops in snippets at this time.
+The *jupyterlab2pymolpysnips* library above includes the code with tabstops in a comment.
+This commented code can serve as a reference to aid in finding all sites that need to be edited.
+This variant of the library also has a caption that describes the purpose of the code.
+
+You need to install Jupyter first.
+There many ways of doing so.
+To use the conda route, install anaconda or miniconda first for python3.
+You also need the nodejs greater than version 12 installed.
+This can be done via conda, too.
+I installed jupyter in a conda env called jL37 for jupyterLab run with conda python3.7
+
+```bash
+conda create --name jL37
+conda activate jL37
+conda install -c conda-forge jupyter
+conda install -c conda-forge nodejs 
+```
+
+You might want to create a bash alias of the same name for more rapid startup of Jupyter Lab.
+Add this alias to your .bashrc or .zshrc file, and source this file to activate the alias.
+
+```bash
+alias jL37='conda activate jL37 && /opt/anaconda/envs/jL37/bin/jupyter lab'
+```
+I recommend installing the Juyter Lab extnesion *jupyterlab-snippets-multimenus*. 
+The is a fork of the *jupyterlab-snippets* project.
+It enables the creation of seperate pulldown menus for each snippet library.
+This in turn improves access to the snippets and the likelihood that they will be used.
+The installation of *jupyterlab-snippets-multimenus* can be done through the JupyterLab gui or in the terminal via these commands:
+
+```bash
+pip install jupyterlab-snippets-multimenus 
+jupyter lab build
+jupyter --path
+```
+
+Use the following command to get the possible folders where the snippet library can be stored.
+
+```bash
+jupyter --path
+```
+
+For me, the best choice was `/Users/blaine/Library/Jupyter` which serves my multiple variants of Jupyter.
+
+
+You may want to manually install the defualt example snippets for major Python modules.
+The easist way is to use git or you can download the files manually.
+
+```bash
+git clone https://github.com/kuanpern/jupyterlab-snippets-multimenus.git
+cd jupyterlab-snippets-multimenus
+cp -r example_snippets/multimenus_snippets /Users/blaine/Library/Jupyter/.
+```
+
+The snippet of simply code in files with the appropriate file extension.
+Similar snippers can be grouped in a subfolder.
+The subfolders can be nested, although it is usually saner to keep directory trees as swallow as possible.
+The readme.md file of https://github.com/kuanpern/jupyterlab-snippets-multimenus describes two ways of configuring the snippets.
+The first option lists the subfolders and their files in alpabetical order.
+The second option requires very tedious editing a json file. 
+We followed the first option.
+
+```bash
+git clone https://github.com/MooersLab/pymolpysnips
+cd pymolpysnips
+cp -r ./jupyterlabpymolpysnips /Users/blaine/Library/Jupyter/multimenus_snippets
+```
+
+
 
 [JupuyterLab](https://jupyter.org/) aims to be an Integrated Development Environment that can edit Jupyter Notebooks side-by-side with a markdown or LaTeX document in a text editor.
 *JupyterLab* has multiple windows like *Rstudio*: a code console, terminal shells, Jupyter Notebook editor, a text editor, and the Jupyter Notebook editor.
