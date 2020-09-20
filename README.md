@@ -524,7 +524,7 @@ The snippets are stored in a single `.xml` file.
 
 
 <h3 name="geany"> Geany (Universal) </h3>
-[*Geany*](https://www.geany.org) is a free and lightweight GUI-based text editor that has been under development since 2005.
+[Geany](https://www.geany.org) is a free and lightweight GUI-based text editor that has been under development since 2005.
 *Geany* is written in C and C++.
 Binaries are  available for Mac OS, Linux, and Windows.
 The source code is also available.
@@ -533,7 +533,7 @@ The source code is also available.
 <details>
 <summary><b>Installing and using snippets with Geany</b></summary>
 This [webpage](https://www.geany.org/download/releases/) has links to installers for each operating system. https://www.geany.org/download/releases/
-</details>
+
 
 <details>
 <summary><b>Installing snippet library in Geany</b></summary>
@@ -575,6 +575,7 @@ Here is an example of the `ao` snippet being used in *geany*:
 A to-be-developed pml language file is needed to enable syntax highlighting of `pml` files.
 
 </details>
+
 <A href=#FASTLINKS2>Return to list of editors above.</A>
 
 [*gedit*](https://wiki.gnome.org/Apps/Gedit) is often available on the computers running Linux OS at national labs.
@@ -610,6 +611,9 @@ $ cp ~/pymolsnips/geditpymolsnips/pymol.xml ~/.config/gedit/snippets/.
 <A href=#FASTLINKS2>Return to list of editors above.</A>
 </details>
 </details>
+
+
+
 
 <h3 name="jupyterlab"> Jupyter Lab (Universal) </h3>
 
