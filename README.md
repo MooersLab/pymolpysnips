@@ -643,12 +643,12 @@ It is designed to support reproducible research and literate programming.
 The main gotcha is that you have to be aware of the state of the computer.
 That is, you have to be mindful of the order in which the cells were executed.
 
-Jupyter Notebook and Jupyter Lab have extensions that extend their capabilities,
-but their extensions are not interchangeable.
+Jupyter Notebook and Jupyter Lab have extensions that extend their capabilities, but their extensions are not interchangeable.
 Both have extensions for vim keybindings, which will appeal to vim users.
 
 
-<h4 name="jupyterlabsnippets"> jupyterlabpymolpysnips</h4>
+<summary><b>Installation of jupyterlabpymolpysnips and jupyterlab2pymolpysnips for Jupyter Lab</b></summary>
+
 This library has only the Python code without tabstops.
 JupyterLab does not support tab stops in snippets at this time.
 The *jupyterlab2pymolpysnips* library above includes the code with tabstops in a comment.
@@ -718,6 +718,9 @@ git clone https://github.com/MooersLab/pymolpysnips
 cd pymolpysnips
 cp -r ./jupyterlabpymolpysnips /Users/blaine/Library/Jupyter/multimenus_snippets
 ```
+
+<A href=#FASTLINKS2>Return to list of editors above.</A>
+</details>
 
 
 
