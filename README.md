@@ -507,8 +507,10 @@ This editor is on the to-be-added later list because the documentation for this 
 ### Prelude emacs
 
 ### Doom Emacs
-
+</details>
 <A href=#FASTLINKS2>Return to list of editors above.</A>
+
+
 
 <h3 name="espresso"> Espresso (Mac only) </h3>
 	
@@ -517,6 +519,9 @@ It is for those users who desire a text editor that has a GUI that looks like a 
 The snippets are stored in a single `.xml` file.
 
 <A href=#FASTLINKS2>Return to list of editors above.</A>
+
+
+
 
 <h3 name="geany"> Geany (Universal) </h3>
 [*Geany*](https://www.geany.org) is a free and lightweight GUI-based text editor that has been under development since 2005.
@@ -554,6 +559,9 @@ Make sure that there is only one section with the heading `[pymol]`.
 This heading is case sensitive.
 </details>
 
+
+
+
 <details>
 <summary><b>Using the snippet library in Geany</b></summary>
 The snippets are invoked with a tab trigger.
@@ -573,8 +581,7 @@ A to-be-developed pml language file is needed to enable syntax highlighting of `
 *gedit* provides an uncluttered GUI with access to the snippets through a pulldown menu or by a tab trigger.
 
 <A href=#FASTLINKS2>Return to list of editors above.</A>
-<details>
-<summary><b>Installing and using snippets with gedit</b></summary>
+<details><summary><b>Installing and using snippets with gedit</b></summary>
 
 The pymol.lang file has to be installed first.
 Download it form the geditpymolsnips folder.
@@ -602,8 +609,7 @@ $ cp ~/pymolsnips/geditpymolsnips/pymol.xml ~/.config/gedit/snippets/.
 ```
 <A href=#FASTLINKS2>Return to list of editors above.</A>
 </details>
-
-****************    JupyterLab    *******************************************
+</details>
 
 <h3 name="jupyterlab"> Jupyter Lab (Universal) </h3>
 
