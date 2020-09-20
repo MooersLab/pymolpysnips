@@ -612,8 +612,8 @@ Then to copy `pymol.xml` into that directory, do:
 ```bash
 $ cp ~/pymolsnips/geditpymolsnips/pymol.xml ~/.config/gedit/snippets/.
 ```
-<A href=#FASTLINKS2>Return to list of editors above.</A>
 </details>
+<A href=#FASTLINKS2>Return to list of editors above.</A>
 
 
 
@@ -660,7 +660,7 @@ That is, you have to be mindful of the order in which the cells were executed.
 Jupyter Notebook and Jupyter Lab have extensions that extend their capabilities, but their extensions are not interchangeable.
 Both have extensions for vim keybindings, which will appeal to vim users.
 
-
+<details>
 <summary><b>Installation of jupyterlabpymolpysnips and jupyterlab2pymolpysnips for Jupyter Lab</b></summary>
 
 This library has only the Python code without tabstops.
@@ -732,9 +732,9 @@ git clone https://github.com/MooersLab/pymolpysnips
 cd pymolpysnips
 cp -r ./jupyterlabpymolpysnips /Users/blaine/Library/Jupyter/multimenus_snippets
 ```
-
-<A href=#FASTLINKS2>Return to list of editors above.</A>
 </details>
+<A href=#FASTLINKS2>Return to list of editors above.</A>
+
 
 
 
@@ -862,9 +862,6 @@ The kernel.json file for the Python interpreter inside the PyMOL.app on the Mac 
  ],
  "display_name": "pymol.python",
  "language": "python"
-}
-\end{bashcode}
-}
 }
 
 ```
