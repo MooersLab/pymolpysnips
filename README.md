@@ -524,7 +524,7 @@ The snippets are stored in a single `.xml` file.
 
 
 <h3 name="geany"> Geany (Universal) </h3>
-[Geany](https://www.geany.org) is a free and lightweight GUI-based text editor that has been under development since 2005.
+[*Geany*](https://www.geany.org) is a free and lightweight GUI-based text editor that has been under development since 2005.
 *Geany* is written in C and C++.
 Binaries are  available for Mac OS, Linux, and Windows.
 The source code is also available.
@@ -560,8 +560,6 @@ This heading is case sensitive.
 </details>
 
 
-
-
 <details>
 <summary><b>Using the snippet library in Geany</b></summary>
 The snippets are invoked with a tab trigger.
@@ -575,13 +573,19 @@ Here is an example of the `ao` snippet being used in *geany*:
 A to-be-developed pml language file is needed to enable syntax highlighting of `pml` files.
 
 </details>
-
+</details>
 <A href=#FASTLINKS2>Return to list of editors above.</A>
 
-[*gedit*](https://wiki.gnome.org/Apps/Gedit) is often available on the computers running Linux OS at national labs.
+
+
+
+
+
+<h3 name="gedit"> gedit (Universal) </h3>
+[gedit](https://wiki.gnome.org/Apps/Gedit) is often available on the computers running Linux OS at national labs.
 *gedit* provides an uncluttered GUI with access to the snippets through a pulldown menu or by a tab trigger.
 
-<A href=#FASTLINKS2>Return to list of editors above.</A>
+
 <details><summary><b>Installing and using snippets with gedit</b></summary>
 
 The pymol.lang file has to be installed first.
@@ -610,7 +614,7 @@ $ cp ~/pymolsnips/geditpymolsnips/pymol.xml ~/.config/gedit/snippets/.
 ```
 <A href=#FASTLINKS2>Return to list of editors above.</A>
 </details>
-</details>
+
 
 
 
