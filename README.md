@@ -2,13 +2,15 @@
 
 This is the **pymolpysnips** library for the molecualr graphics program PyMOL.
 This library contains Python code for PyMOL.
-The library is formatted for use in text edidtors, IDEs, and electronic notebooks including Jupyter, org-mode, and Rmarkdown.
+The library is formatted for use in text edidtors, IDEs, and electronic notebooks including Jupyter.
 If you are looking for the library for the PyMOL Macro Language (pml), see the sibling library [**pymolsnips**](https://github.com/MooersLab/pymolpysnips/issues).
 
- that has either Python code or  PyMOL pml code enclosed in cmd.do() functions.
+The **pymolpysnips** librarythat has either Python code or  PyMOL pml code enclosed in cmd.do() functions.
 This enclosure enables passage of pml code to PyMOL from literate programming documents with Python kernels with the results returned to output cells in the document.
 This code will optimized for speed later by replacing the pml commands with their Python functions in the pymol Python.api.
 The current suboptimal code is easier for non-Python users to understand.
+For platforms that do not support tab stops (e.g., Jupyter), the **pymolpy2snips** library contains a copy of the code in a comment with the tab stops marked.
+This comment serves as a guide to direct editing of the code.
 
 This project is a derivative of the pymolsnips project.
 See the README.md file for the pymolsnips project for the full details about the library and each supported text editor.
@@ -16,7 +18,7 @@ This readme files has text that is largely limited to unique features that perta
 
 In general, main difference is that the code is stored in Python script files.
 Every effort was made to retain the corresponding tab trigger name that is in the pymolsnips library.
-Python python end blocks in the pymolsnips library were replaced with list comprehensions or other Python code.
+`python ... python end` blocks in the pymolsnips library were replaced with list comprehensions or other Python code where possible.
 
 ### <A name="FASTLINKS">Quick links</A>
 
