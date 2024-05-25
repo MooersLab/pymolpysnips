@@ -4,7 +4,7 @@
 
 # pymolpysnips project (still building out)
 
-Only the versions for Atom (identical to what is required by Pulsar, the replacement for Adam), gedit, and Jupyter Lab are available now. Go [here](https://github.com/MooersLab/jupyterlabpymolpysnips) for the Jupyter Lab snippets.
+Only the versions for Atom (identical to what is required by [Pulsar](https://pulsar-edit.dev/docs/launch-manual/sections/using-pulsar/sections/snippets.html#creating-your-own-snippets), the replacement for Adam), gedit, and Jupyter Lab are available now. Go [here](https://github.com/MooersLab/jupyterlabpymolpysnips) for the Jupyter Lab snippets.
 
 
 ## Atom Installation
