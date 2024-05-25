@@ -2,9 +2,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-# pymolpysnips project (to be built out soon)
+# pymolpysnips project (still building out)
 
-Only the versions for Atom, gedit, and Jupyter Lab are available at this time. Go [here](https://github.com/MooersLab/jupyterlabpymolpysnips) for the Jupyter Lab snippets.
+Only the versions for Atom (identical to what is required by Pulsar, the replacement for Adam), gedit, and Jupyter Lab are available now. Go [here](https://github.com/MooersLab/jupyterlabpymolpysnips) for the Jupyter Lab snippets.
+
+
+## Atom Installation
+Append snippets to the collection in snippets.cson in the `~/.atom folder`.
+
+## Pulsar Installation
+Append snippets to the collection in snippets.cson in the `~/.pulsar folder`.
 
 ## Related repositories
 
@@ -23,6 +30,8 @@ Only the versions for Atom, gedit, and Jupyter Lab are available at this time. G
 |Version      | Changes                                                                                                                                    | Date                 |
 |:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
 | Version 0.1 |   Added badges, funding, and update table.                                                                                                 | 2024 May 24         |
+| Version 0.2 |   Added install instructions for Atom and Pulsar                                                                                           | 2024 May 24         |
+
 
 ## Sources of funding
 
