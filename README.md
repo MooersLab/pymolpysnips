@@ -36,7 +36,7 @@ Append snippets to the collection in snippets.cson in the `~/.pulsar folder`.
 |Version      | Changes                                                                                                                                    | Date                 |
 |:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
 | Version 0.1 |   Added badges, funding, and update table.                                                                                                 | 2024 May 24         |
-| Version 0.2 |   Added install instructions for Atom and Pulsar                                                                                           | 2024 May 24         |
+| Version 0.2 |   Added install instructions for Atom, gedit, and Pulsar                                                                                   | 2024 May 24         |
 
 
 ## Sources of funding
