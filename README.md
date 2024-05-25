@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=pymolpysnips&message=0.2&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=pymolpysnips&message=0.1&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -22,7 +22,7 @@ Only the version for Jupyter Lab is available at this time. Go [here](https://gi
 
 |Version      | Changes                                                                                                                                    | Date                 |
 |:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
-| Version 0.2 |   Added badges, funding, and update table.                                                                                                 | 2024 May 24         |
+| Version 0.1 |   Added badges, funding, and update table.                                                                                                 | 2024 May 24         |
 
 ## Sources of funding
 
