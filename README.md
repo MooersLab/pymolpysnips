@@ -2,9 +2,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-# pymolpysnips project
+# pymolpysnips project (to be built out soon)
 
-Only the version for Jupyter Lab is available at this time. Go [here](https://github.com/MooersLab/jupyterlabpymolpysnips).
+Only the versions for Atom, gedit, and Jupyter Lab are available at this time. Go [here](https://github.com/MooersLab/jupyterlabpymolpysnips) for the Jupyter Lab snippets.
 
 ## Related repositories
 
