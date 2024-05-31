@@ -4,8 +4,9 @@
 
 # pymolpysnips project
 
-Only the versions for Atom (identical to what is required by [Pulsar](https://pulsar-edit.dev/docs/launch-manual/sections/using-pulsar/sections/snippets.html#creating-your-own-snippets) (the community-driven replacement for Adam), gedit, and Jupyter Lab are available now. Go [here](https://github.com/MooersLab/jupyterlabpymolpysnips) for the Jupyter Lab snippets.
-I decided to provide this library for different editors in separate repositories so that users would not have to download code for text editors that they do not use.
+Only the versions for Atom (identical to what is required by [Pulsar](https://pulsar-edit.dev/docs/launch-manual/sections/using-pulsar/sections/snippets.html#creating-your-own-snippets) (the community-driven replacement for Adam), gedit, and Jupyter Lab are available now. 
+Go [here](https://github.com/MooersLab/jupyterlabpymolpysnips) for the Jupyter Lab snippets.
+I decided to provide this library for different editors in separate repositories so that users would not have to download the code for text editors they do not use.
 
 ## Atom Installation
 Append snippets to the collection in snippets.cson in the `~/.atom folder`.
